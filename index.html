@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Shadow Strike 3D</title>
+<meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style.css">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <script type="importmap">
-    {
-      "imports": {
-        "three": "https://unpkg.com/three@0.165.0/build/three.module.js"
-      }
-    }
-    </script>
+<title>Shadow Strike 3D</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script type="importmap">
+{
+  "imports": {
+    "three":"https://unpkg.com/three@0.165.0/build/three.module.js"
+  }
+}
+</script>
+
 </head>
+
 <body>
 
-<div id="loading">
-    Shadow Strike 3D
+<div id="hud">
+
+<div id="joystickBase">
+<div id="joystickStick"></div>
+</div>
+
+<div id="fireButton">
+🔫
+</div>
+
+<div id="crosshair"></div>
+
 </div>
 
 <script type="module" src="main.js"></script>
