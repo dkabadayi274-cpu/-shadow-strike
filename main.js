@@ -7,6 +7,8 @@ function resize() {
 }
 resize();
 window.addEventListener("resize", resize);
+fireButton.x = canvas.width - 90;
+fireButton.y = canvas.height - 90;
 
 const player = {
     x: 400,
@@ -17,6 +19,13 @@ const player = {
 };
 
 let joystick = {
+    const bullets = [];
+
+const fireButton = {
+    x: 0,
+    y: 0,
+    r: 45
+};
     active: false,
     startX: 0,
     startY: 0,
